@@ -1,0 +1,61 @@
+\documentclass[hyperref]{ctexart}
+\usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry} %页边距
+\usepackage{helvet}
+\usepackage{amsmath, amsfonts, amssymb} % 数学公式、符号
+\usepackage[english]{babel}
+\usepackage{graphicx}   % 图片
+\usepackage{url}        % 超链接
+\usepackage{bm}         % 加粗方程字体
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}       
+\renewcommand{\algorithmicensure}{ \textbf{Initialize:}} 
+\renewcommand{\algorithmicreturn}{ \textbf{Output:}}     
+%算法格式
+\usepackage{fancyhdr} %设置页眉、页脚
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\usepackage{hyperref} %bookmarks
+\hypersetup{colorlinks, bookmarks, unicode} %unicode
+\usepackage{multicol}
+\title{\textbf{Title}}
+\author{\sffamily author1$^1$, \sffamily author2$^2$, \sffamily author3$^3$}
+\date{(Dated: \today)}
+\begin{document}
+	\maketitle
+		\noindent{\bf Abstract: }This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.This is abstract.\\
+		
+		\noindent{\bf Keywords: }Keyword1; Keyword2; Keyword3;...
+	\begin{multicols}{2}
+	\section{Introduction}
+	This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.
+	\subsection{title}
+	This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.
+	\subsubsection{title}
+	This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.This is introduction.
+	\section{title}
+	\noindent Equations: 
+	\begin{equation}
+		E=mc^2
+	\end{equation}
+	\begin{equation}
+		H\psi=E\psi
+	\end{equation}\\
+	$\partial\partial=0$, and
+	$$\iint_S \vec{F}\cdot \vec{n}d\sigma=\iiint \nabla\times\vec{F}dV$$
+	\section{Conclusion}
+	This is conclusion. This is conclusion. This is conclusion. This is conclusion. This is conclusion. This is conclusion. This is conclusion. This is conclusion. This is conclusion.This is conclusion.
+	\section*{Acknowledgments}
+	 These are acknowledgments. These are acknowledgments. These are acknowledgments. These are acknowledgments. These are acknowledgments. These are acknowledgments.
+	\begin{thebibliography}{100}%此处数字为最多可添加的参考文献数量
+		\bibitem{article1}This is reference.%title author journal data pages
+		\bibitem{book1}This is reference.%title author publish date
+	\end{thebibliography}
+	\end{multicols}
+\end{document}
